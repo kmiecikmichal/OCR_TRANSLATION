@@ -1,6 +1,4 @@
-import ocr
-
+import main_handler
 
 if __name__ == "__main__":
-    text = ocr.ocr()
-    print(text)
+    main_handler.main_handler()
