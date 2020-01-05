@@ -3,12 +3,26 @@ import sys
 
 
 def photos_path():
-    path = os.path.abspath(os.path.dirname(__file__)) + "/photos"
+    try:
+        directory = "/photos"
+        path = os.path.abspath(os.path.dirname(__file__)) + directory
+        if not os.path.isdir(path): # If path does not exist
+            raise FileNotFoundError("Error: photos directory does not exist")
+    except FileNotFoundError as exc:
+        print(exc)
+        sys.exit(1)
     return path
 
 
 def text_path():
-    path = os.path.abspath(os.path.dirname(__file__)) + "/text"
+    try:
+        directory = "/text"
+        path = os.path.abspath(os.path.dirname(__file__)) + directory
+        if not os.path.isdir(path):  # If path does not exist
+            raise FileNotFoundError("Error: text directory does not exist")
+    except FileNotFoundError as exc:
+        print(exc)
+        sys.exit(1)
     return path
 
 

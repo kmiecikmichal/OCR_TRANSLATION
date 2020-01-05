@@ -2,6 +2,7 @@ import file_handler
 import ocr
 import text_to_file
 
+
 def main_handler():
     photos_path = file_handler.photos_path()
     text_path = file_handler.text_path()
