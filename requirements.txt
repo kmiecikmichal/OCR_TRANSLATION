@@ -1,2 +1,3 @@
 pytesseract
 PIL
+googletrans
