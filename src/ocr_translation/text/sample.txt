@@ -1,0 +1,1 @@
+Jest to pierwsza linia tego przyk³adu tekstowym. Jest to druga linia tego samego tekstu.
