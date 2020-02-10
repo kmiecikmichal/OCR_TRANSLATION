@@ -1,6 +1,7 @@
 import unittest
 from src.ocr_translation import file_handler
 from src.ocr_translation import ocr
+from src.ocr_translation import translator
 # Command to run the test: python -m unittest tests.test_file_handler
 
 
@@ -29,3 +30,7 @@ class TestFileHandler(unittest.TestCase):
     def test_ocr_dict_content(self):
         texts = self.text_dict
         self.assertEqual(texts, {"sample": 'This is the first line of this text example.  This is the second ' 'line of the same text.'})
+
+    def test_translator(self):
+        translate = translator.translator({"test": "water"}, "pl")
+        self.assertEqual(translate, {"test":"woda"})
