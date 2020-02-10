@@ -3,7 +3,7 @@ OCR_TRANSLATION
 ===============
 
 
-Add a short description here!
+Optical character recognition and translation
 
 
 Description
